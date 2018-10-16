@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log-in</title>
+    <link rel="stylesheet" href="../public/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../public/assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../public/assets/css/Dark-Footer-1.css">
+    <link rel="stylesheet" href="../public/assets/css/Dark-Footer-2.css">
+    <link rel="stylesheet" href="../public/assets/css/Dark-Footer.css">
+    <link rel="stylesheet" href="../public/assets/css/Dark-NavBar-1.css">
+    <link rel="stylesheet" href="../public/assets/css/Dark-NavBar-2.css">
+    <link rel="stylesheet" href="../public/assets/css/Dark-NavBar.css">
+    <link rel="stylesheet" href="../public/assets/css/ebs-contact-form-1.css">
+    <link rel="stylesheet" href="../public/assets/css/ebs-contact-form.css">
+    <link rel="stylesheet" href="../public/assets/css/Pretty-Registration-Form.css">
+    <link rel="stylesheet" href="../public/assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="../public/assets/css/Footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="../public/assets/css/Form---Wizard.css">
+    <link rel="stylesheet" href="../public/assets/css/responsive-registration-form-1.css">
+    <link rel="stylesheet" href="../public/assets/css/responsive-registration-form.css">
+    <link rel="stylesheet" href="../public/assets/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Finger+Paint">
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button" style="height: 80px;background-color: #000000;color: #ffffff;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">&nbsp;Go Feed Me</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" href="index.html" style="color:#ffffff;">
+                                <i class="fa fa-home"></i>&nbsp;Home</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="#" style="color:#ffffff;">
+                                <i class="fa fa-group"></i>&nbsp;About Us</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="contact.html" style="color:#ffffff;">
+                                <i class="fa fa-wpforms"></i>&nbsp;Contact US</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="volunteer.html" style="color:#ffffff;">
+                                <i class="fa fa-user-circle-o"></i>&nbsp;Volunteer</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="#" style="color:#ffffff;">
+                                <i class="fa fa-sign-in"></i>&nbsp;Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <img src="../public/assets/img/volunteer.jpg">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Login</h1>
+                <form id="formLogin">
+                    <div class="form-group">
+                        <label>&nbsp;&nbsp;E-mail </label>
+                        <input id="textEmail" class="form-control" type="email" placeholder="Your email address">
+                    </div>
+                    <div class="form-group">
+                        <label>&nbsp;Password</label>
+                        <input id="textPassword" class="form-control" type="password" placeholder="Must be at least 6 characters">
+                    </div>
+
+                    <button id="btnLogin" class="btn btn-light" type="button">Login</button>
+                    <button id="btnSignUp" class="btn btn-light" type="button">Sign up</button>
+                    <button id="btnLogout" class="btn btn-light" type="button" style="display: none;">Logout</button>
+
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAby5-flRUZH79bi_fxcUy_RlIi0MCm4zY",
+    authDomain: "go-feed-me-project-2.firebaseapp.com",
+    databaseURL: "https://go-feed-me-project-2.firebaseio.com",
+    projectId: "go-feed-me-project-2",
+    storageBucket: "go-feed-me-project-2.appspot.com",
+    messagingSenderId: "771848633863"
+  };
+  firebase.initializeApp(config);
+
+  // Get elements
+
+  const textEmail = document.getElementById("textEmail");
+  const textPassword = document.getElementById("textPassword");
+  const btnLogin = document.getElementById("btnLogin");
+  const btnSignUp = document.getElementById("btnSignUp");
+  const btnLogout = document.getElementById("btnLogout");
+
+// Validate User input
+
+
+
+
+
+// Add login event
+
+btnLogin.addEventListener("click", e => {
+    // Get email and pass 
+    const email = textEmail.value;
+    const pass = textPassword.value;
+    const auth = firebase.auth();
+    // Sign in 
+    const promise = auth.signInWithEmailAndPassword(email, pass);
+
+    promise.catch(e => console.log(e.massage));
+
+    document.getElementById("formLogin").reset();
+
+});
+
+btnSignUp.addEventListener("click", e => {
+    const email = textEmail.value;
+    const pass = textPassword.value;
+    const auth = firebase.auth();
+    // Sign in 
+    const promise = auth.createUserWithEmailAndPassword(email, pass);
+
+    promise.catch(e => console.log(e.massage));
+
+    document.getElementById("formLogin").reset();
+});
+
+btnLogout.addEventListener("click", e => {
+    firebase.auth().signOut();
+    document.getElementById("formLogin").reset();
+})
+
+firebase.auth().onAuthStateChanged(firebaseUser => {
+    if(firebaseUser) {
+        console.log(firebaseUser);
+        btnLogout.removeAttribute("style");
+    } else {
+        console.log("Not logged in");
+    }
+});
+
+
+</script>
+</html>
