@@ -1,24 +1,24 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  // Get all volunteers
+  app.get("/models/example.js", function(req, res) {
+    db.volunteer.findAll({}).then(function(dbvolunteer) {
+      res.json(dbvolunteer);
     });
   });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  // Create a new volunteer
+  app.post("/api/models/exapmle.js", function(req, res) {
+    db.volunteer.create(req.body).then(function(dbvolunteer) {
+      res.json(dbvolunteer);
     });
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
+  // Delete a volunteer by id
+  app.delete("/api/models/example.js/:id", function(req, res) {
+    db.volunteer.destroy({ where: { id: req.params.id } }).then(function(dbvolunteer) {
+      res.json(dbvolunteer);
     });
   });
 };
