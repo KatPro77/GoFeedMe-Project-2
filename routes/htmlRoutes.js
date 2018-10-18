@@ -20,4 +20,11 @@ module.exports = function (app) {
   app.get("/login", function (req, res) {
     res.sendFile(path.join(__dirname, "../views/authTest.html"));
   });
+
+  // Load mealRequest page
+  app.get("/meals", function (req, res) {
+    res.sendFile(path.join(__dirname, "../views/mealRequest.html"));
+  });
 };
+
+
