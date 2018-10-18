@@ -1,11 +1,11 @@
 {
   "development": {
     "username": "root",
-    "password": "rrrr4444RRRR$$$$",
+    "password": "root",
     "database": "volunteer_db",
     "host": "localhost",
     "dialect": "mysql",
-    "port": 3306
+    "port": 9498
   },
   "test": {
     "username": "root",
