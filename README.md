@@ -7,3 +7,9 @@ Henry Hester
 Leah Yopp
 Paulo 
 James Inch 
+
+----------------------------------------------------------------------------
+
+TODO: * Hide api keys.
+    *  Add promt letting user know they have signed in, or that they need to sign up.
+
