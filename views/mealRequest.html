@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Volunteer</title>
+	<title>Meal Request</title>
 	<meta charset="utf-8">
 	<meta name="format-detection" content="telephone=no" />
 	<link rel="icon" href="../public/assets/images/logo.png">
@@ -72,11 +72,24 @@
 						<fieldset>
 						
 						<!-- Form Name -->
-						<legend>Volunteer form</legend>
+						<legend>Meal Request Form</legend>
+						
+						<!-- Select Basic -->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="organization">Organization:</label>
+						  <div class="col-md-4">
+							<select id="organization" name="organization" class="form-control">
+							  <option value="1">School</option>
+							  <option value="2">Church</option>
+							  <option value="3">Charity</option>
+							  <option value="4">Individual</option>
+							</select>
+						  </div>
+						</div>
 						
 						<!-- Text input-->
 						<div class="form-group">
-						  <label class="col-md-4 control-label" for="name">Full Name</label>  
+						  <label class="col-md-4 control-label" for="name">Name:</label>  
 						  <div class="col-md-4">
 						  <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required="">
 							
@@ -85,128 +98,130 @@
 						
 						<!-- Text input-->
 						<div class="form-group">
-						  <label class="col-md-4 control-label" for="email">Email address:</label>  
+						  <label class="col-md-4 control-label" for="email">Email address</label>  
 						  <div class="col-md-4">
-						  <input id="email" name="email" type="text" placeholder="Email" class="form-control input-md" required="">
+						  <input id="email" name="email" type="text" placeholder="Email address:" class="form-control input-md" required="">
 							
 						  </div>
 						</div>
 						
 						<!-- Text input-->
 						<div class="form-group">
-						  <label class="col-md-4 control-label" for="phone Number">Phone Number:</label>  
+						  <label class="col-md-4 control-label" for="address">Address:</label>  
 						  <div class="col-md-4">
-						  <input id="phone Number" name="phone Number" type="text" placeholder="Phone Number" class="form-control input-md" required="">
+						  <input id="address" name="address" type="text" placeholder="Address" class="form-control input-md">
+							
+						  </div>
+						</div>
+						
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="zip code">Zip Code:</label>  
+						  <div class="col-md-4">
+						  <input id="zip code" name="zip code" type="text" placeholder="Zip Code" class="form-control input-md" required="">
 							
 						  </div>
 						</div>
 						
 						<!-- Select Basic -->
 						<div class="form-group">
-						  <label class="col-md-4 control-label" for="availability">Availability:</label>
+						  <label class="col-md-4 control-label" for="meals">Number of meals:</label>
 						  <div class="col-md-4">
-							<select id="availability" name="availability" class="form-control">
+							<select id="meals" name="meals" class="form-control">
+							  <option value="1">1</option>
+							  <option value="2">2</option>
+							  <option value="3">3</option>
+							  <option value="4">4</option>
+							  <option value="5">5</option>
+							  <option value="6">6</option>
+							</select>
+						  </div>
+						</div>
+						
+						<!-- Select Basic -->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="meals2">Meal type:</label>
+						  <div class="col-md-4">
+							<select id="meals2" name="meals2" class="form-control">
 							  <option value="1">Breakfast</option>
 							  <option value="2">Lunch</option>
 							  <option value="3">Dinner</option>
 							</select>
 						  </div>
 						</div>
-				
+						
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="allergies">Food allergies:</label>  
+						  <div class="col-md-4">
+						  <input id="allergies" name="allergies" type="text" placeholder="Food allergies" class="form-control input-md" required="">
+							
+						  </div>
+						</div>
+
 						<div class="bootstrap-iso">
 								<div class="container-fluid">
 								 <div class="row">
-									<div class="col-md-6 col-sm-6 col-xs-12">
-									 <form action="https://formden.com/post/MlKtmY4x/" class="form-horizontal" method="post">
-										<div class="form-group ">
-										 <label class="control-label col-sm-2 requiredField" for="date">
-											Date:
-										 </label>
-										 <div class="col-sm-10">
-											<div class="input-group">
-											 <div class="input-group-addon">
-												<i class="fa fa-calendar">
-												</i>
-											 </div>
-											 <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
-											</div>
-										 </div>
-										</div>
-										<div class="form-group">
-										 <div class="col-sm-10 col-sm-offset-2">
-											<input name="_honey" style="display:none" type="text"/>
-										 </div>
-										</div>
-									 </form>
+								  <div class="col-md-6 col-sm-6 col-xs-12">
+								   <form action="https://formden.com/post/MlKtmY4x/" class="form-horizontal" method="post">
+									<div class="form-group ">
+									 <label class="control-label col-sm-2 requiredField" for="date">
+									  Date:
+									 </label>
+									 <div class="col-sm-10">
+									  <div class="input-group">
+									   <div class="input-group-addon">
+										<i class="fa fa-calendar">
+										</i>
+									   </div>
+									   <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+									  </div>
+									 </div>
 									</div>
+									<div class="form-group">
+									 <div class="col-sm-10 col-sm-offset-2">
+									  <input name="_honey" style="display:none" type="text"/>
+									 </div>
+									</div>
+								   </form>
+								  </div>
 								 </div>
 								</div>
-							 </div>
-						
-							 
-							 
-							 <!-- Extra JavaScript/CSS added manually in "Settings" tab -->
-							 <!-- Include jQuery -->
-							 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-							 
-							 <!-- Include Date Range Picker -->
-							 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-							 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-							 
-							 <script>
-								 $(document).ready(function(){
-									 var date_input=$('input[name="date"]'); //our date input has the name "date"
-									 var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-									 date_input.datepicker({
-										 format: 'mm/dd/yyyy',
-										 container: container,
-										 todayHighlight: true,
-										 autoclose: true,
-									 })
-								 })
-							 </script>
-							 
-
-
-						<!-- Multiple Checkboxes (inline) -->
-						<div class="form-group">
-								<label class="col-md-4 control-label" for="background check">Do you agree to us local farmers markets?</label>
-								<div class="col-md-4">
-								<label class="checkbox-inline" for="background check-0">
-									<input type="checkbox" name="background check" id="background check-0" value="1">
-									Yes
-								</label>
-								<label class="checkbox-inline" for="background check-1">
-									<input type="checkbox" name="background check" id="background check-1" value="2">
-									No
-								</label>
-								</div>
-							</div>
-							
-
-						<div class="form-group">
-						  <label class="col-md-4 control-label" for="background check">Do you agree to a background check?</label>
-						  <div class="col-md-4">
-							<label class="checkbox-inline" for="background check-0">
-							  <input type="checkbox" name="background check" id="background check-0" value="1">
-							  Yes
-							</label>
-							<label class="checkbox-inline" for="background check-1">
-							  <input type="checkbox" name="background check" id="background check-1" value="2">
-							  No
-							</label>
-						  </div>
-						</div>
+							   </div>
+							   
+							   
+							   <!-- Extra JavaScript/CSS added manually in "Settings" tab -->
+							   <!-- Include jQuery -->
+							   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+							   
+							   <!-- Include Date Range Picker -->
+							   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+							   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+							   
+							   <script>
+								   $(document).ready(function(){
+									   var date_input=$('input[name="date"]'); //our date input has the name "date"
+									   var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+									   date_input.datepicker({
+										   format: 'mm/dd/yyyy',
+										   container: container,
+										   todayHighlight: true,
+										   autoclose: true,
+									   })
+								   })
+							   </script>
+							   
 						
 						<!-- Button -->
 						<div class="form-group">
 						  <div class="col-md-4">
-							<button id="submit button" name="submit button" class="btn btn-primary">Submit</button>
+							<button id="submit" name="submit" class="btn btn-primary">Submit</button>
 						  </div>
 						</div>
 						
 						</fieldset>
 						</form>
+						
 		</div>
 		<div class="bottom_block">
 			<div class="container_12">
