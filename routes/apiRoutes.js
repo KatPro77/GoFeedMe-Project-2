@@ -9,7 +9,7 @@ module.exports = function(app) {
   });
 
   // Create a new volunteer
-  app.post("/api/models/exapmle.js", function(req, res) {
+  app.post("/api/models/example.js", function(req, res) {
     db.volunteer.create(req.body).then(function(dbvolunteer) {
       res.json(dbvolunteer);
     });
