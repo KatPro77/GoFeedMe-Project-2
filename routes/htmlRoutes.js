@@ -3,7 +3,7 @@ var path = require("path");
 module.exports = function (app) {
   // Load index page
   app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "../views/index.html"));
+    res.sendFile(path.join(__dirname, "../views/login.html"));
   });
 
   // Load contact page
@@ -17,8 +17,8 @@ module.exports = function (app) {
   });
 
   // Load login page
-  app.get("/login", function (req, res) {
-    res.sendFile(path.join(__dirname, "../views/login.html"));
+  app.get("/home", function (req, res) {
+    res.sendFile(path.join(__dirname, "../views/index.html"));
   });
 
   // Load mealRequest page
