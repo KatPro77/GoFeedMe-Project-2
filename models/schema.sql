@@ -4,9 +4,13 @@ USE volunteer_db;
 
 CREATE TABLE volunteers (
     id INT NOT NULL AUTO_INCREMENT,
-    Name VARCHAR(45) NOT NULL,
-    Location VARCHAR(200) NOT NULL,
-    Available VARCHAR(155) NOT NULL,
-    Group_Size INTEGER NOT NULL,
+    FMID INTEGER(1100000) NOT NULL,
+    MarketName VARCHAR(200) NOT NULL,
+    Website VARCHAR(500) NOT NULL,
+    Street VARCHAR(100) NOT NULL,
+    City VARCHAR(50) NOT NULL,
+    County VARCHAR(50) NOT NULL,
+    State VARCHAR(50) NOT NULL,
+    Zip Code VARCHAR(50) NOT NULL,
     PRIMARY KEY(id)
 );
