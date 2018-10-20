@@ -21,13 +21,13 @@ module.exports = function(sequelize, DataTypes) {
     location: {
       type: DataTypes.INTEGER
     },
-    avalibility: {
+    availability: {
       type: DataTypes.DATE
     },
     mealPreference: {
       type: DataTypes.STRING
     },
-    mealuantity: {
+    mealQuantity: {
       type: DataTypes.INTEGER
     },
     background: {
