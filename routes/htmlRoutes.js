@@ -13,12 +13,12 @@ module.exports = function (app) {
 
   // Load volunteer page 
   app.get("/volunteer", function (req, res) {
-    res.sendFile(path.join(__dirname, "../views/index.html"));
+    res.sendFile(path.join(__dirname, "../views/volunteer.html"));
   });
 
   // Load login page
   app.get("/login", function (req, res) {
-    res.sendFile(path.join(__dirname, "../views/authTest.html"));
+    res.sendFile(path.join(__dirname, "../views/login.html"));
   });
 
   // Load mealRequest page
