@@ -18,7 +18,7 @@ module.exports = function (app) {
 
   // Load login page
   app.get("/login", function (req, res) {
-    res.sendFile(path.join(__dirname, "../views/authTest.html"));
+    res.sendFile(path.join(__dirname, "../views/login.html"));
   });
 
   // Load mealRequest page
