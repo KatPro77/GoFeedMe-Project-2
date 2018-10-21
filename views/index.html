@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+<<<<<<< HEAD
 	<title>GoFeedMe Homepage</title>
 	<meta charset="utf-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="icon" href="assets/images/GoFeedMe-logo.png">
 	<link rel="shortcut icon" href="assets/images/GoFeedMe-logo.png">
+=======
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+ 	<link rel="icon" href="assets/images/logo.png">
+	<link rel="shortcut icon" href="assets/images/logo.png">
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
 	<link rel="stylesheet" href="assets/css/form.css">
 	<link rel="stylesheet" href="assets/css/thumbs.css">
 	<link rel="stylesheet" href="assets/css/slider.css">
@@ -185,7 +193,6 @@
 		</div>
 	</div>
 	</div>
-
 	<div class="bottom_block">
 		<div class="container_12">
 			<div class="grid_4">
@@ -277,5 +284,49 @@
 		});
 	</script>
 </body>
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+<script type="text/javascript">
+    // Initialize Firebase
+    // FIXME: Hide api keys!!!!!
+    var config = {
+        apiKey: "AIzaSyAby5-flRUZH79bi_fxcUy_RlIi0MCm4zY",
+        authDomain: "go-feed-me-project-2.firebaseapp.com",
+        databaseURL: "https://go-feed-me-project-2.firebaseio.com",
+        projectId: "go-feed-me-project-2",
+        storageBucket: "go-feed-me-project-2.appspot.com",
+        messagingSenderId: "771848633863"
+    };
+    firebase.initializeApp(config);
 
+    // Get elements
+
+    const textEmail = document.getElementById("textEmail");
+    const textPassword = document.getElementById("textPassword");
+    const btnLogin = document.getElementById("btnLogin");
+    const btnSignUp = document.getElementById("btnSignUp");
+    const btnLogout = document.getElementById("btnLogout");
+
+
+
+    btnLogout.addEventListener("click", e => {
+        firebase.auth().signOut();
+        document.getElementById("formLogin").reset();
+    })
+
+    // Add/remove logout option
+
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+        if (firebaseUser) {
+            console.log(firebaseUser);
+            btnLogout.removeAttribute("style");
+            window.location = "/home"
+        } else {
+            console.log("Not logged in");
+            btnLogout.setAttribute("style", "display: none;");
+            // window.location = "/"
+        }
+    });
+
+
+</script>
 </html>

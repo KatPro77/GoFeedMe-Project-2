@@ -27,11 +27,14 @@ body {
     background-color: #fff;
     color: #838181;
     font: 14px/20px 'Open Sans', sans-serif;
+<<<<<<< HEAD
     background-color: #e9b953;
 }
 
 .content {
     background-color: #e9b953;
+=======
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
 }
 
 .ic {
@@ -56,8 +59,12 @@ address {
 }
 
 p {
+<<<<<<< HEAD
     margin-bottom: 20px;
     font-weight: bold;
+=======
+	margin-bottom: 20px;
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
 }
 
 input {
@@ -77,6 +84,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
+<<<<<<< HEAD
 	color: #572f09;
 }
 
@@ -86,6 +94,16 @@ h2 {
     padding-top: 88px;
     margin-bottom: 18px;
     font-weight: bold;
+=======
+	color: #468c6b;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 88px;
+    margin-bottom: 18px;
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
 }
 
 h2 a:hover {
@@ -226,6 +244,7 @@ a:hover {
 
 a.btn {
     margin-top: 25px;
+<<<<<<< HEAD
     color: #f3eee8;
     font-size: 14px;
     line-height: 20px;
@@ -233,6 +252,14 @@ a.btn {
     padding: 4px 17px 5px;
     background-color: #2d5758;
     font-weight: bold;
+=======
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    padding: 4px 17px 5px;
+    background-color: #60bf93;
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
 }
 
 a.btn:hover {
@@ -251,8 +278,13 @@ a.btn:hover {
 	padding: 0 !important;
 }
 
+<<<<<<< HEAD
 /* .pad1 {
 } */
+=======
+.pad1 {
+}
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
 
 
 .img_inner {
@@ -309,7 +341,10 @@ header {
     padding: 32px 0 17px;
     border-bottom: 1px solid #c2c2c2;
     box-shadow: 0 5px 3px #f7f7f7;
+<<<<<<< HEAD
     background-color: #eccc9b;
+=======
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
 }
 
 
@@ -568,7 +603,11 @@ ul.list.l1 time {
     right: auto;
     left: 30px;
 }
+<<<<<<< HEAD
 /* 
+=======
+
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
 .video {
     margin-bottom: 20px;
     padding-top: 1px;
@@ -617,7 +656,11 @@ a.gal:hover img {
 
 .gallery  h2 {
     padding-top: 62px;
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
 
 /**Map**/
 
@@ -631,7 +674,10 @@ a.gal:hover img {
 
 .col2 {
     color: #626161;
+<<<<<<< HEAD
     font-weight: bold;
+=======
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
 }
 
 .map {
