@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>Volunteer</title>
+	<title>Meal Request</title>
 	<meta charset="utf-8">
 	<meta name="format-detection" content="telephone=no" />
 	<link rel="icon" href="assets/images/GoFeedMe-logo.png">
@@ -55,12 +55,9 @@
 					<div class="clear"></div>
 					<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 						<ul class="sf-menu">
-							<li><a href="index.html">Home</a>
-							</li>
-							<li class="current"><a href="volunteer.html">Volunteer</a>
-							</li>
-							<li><a href="mealRequest.html">Meal Request</a>
-							</li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="volunteer.html">Volunteer</a></li>
+							<li class="current"><a href="mealRequest.html">Meal Request</a></li>
 							<!-- <li><a href="index-3.html">Get Involved</a></li>
 							<li><a href="index-4.html">Contacts</a></li> -->
 						</ul>
@@ -116,11 +113,24 @@
 						<fieldset>
 						
 						<!-- Form Name -->
-						<legend id="volunteerForm">Volunteer form</legend>
+						<legend>Meal Request Form</legend>
+						
+						<!-- Select Basic -->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="organization">Organization:</label>
+						  <div class="col-md-4">
+							<select id="organization" name="organization" class="form-control">
+							  <option value="1">School</option>
+							  <option value="2">Church</option>
+							  <option value="3">Charity</option>
+							  <option value="4">Individual</option>
+							</select>
+						  </div>
+						</div>
 						
 						<!-- Text input-->
 						<div class="form-group">
-						  <label class="col-md-4 control-label" for="name">Full Name</label>  
+						  <label class="col-md-4 control-label" for="name">Name:</label>  
 						  <div class="col-md-4">
 						  <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required="">
 							
@@ -129,138 +139,153 @@
 						
 						<!-- Text input-->
 						<div class="form-group">
-						  <label class="col-md-4 control-label" for="email">Email address:</label>  
+						  <label class="col-md-4 control-label" for="email">Email address</label>  
 						  <div class="col-md-4">
-						  <input id="email" name="email" type="text" placeholder="Email" class="form-control input-md" required="">
+						  <input id="email" name="email" type="text" placeholder="Email address:" class="form-control input-md" required="">
 							
 						  </div>
 						</div>
 						
 						<!-- Text input-->
 						<div class="form-group">
-						  <label class="col-md-4 control-label" for="phone Number">Phone Number:</label>  
+						  <label class="col-md-4 control-label" for="address">Address:</label>  
 						  <div class="col-md-4">
-						  <input id="phone Number" name="phone Number" type="text" placeholder="Phone Number" class="form-control input-md" required="">
+						  <input id="address" name="address" type="text" placeholder="Address" class="form-control input-md">
+							
+						  </div>
+						</div>
+						
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="zip code">Zip Code:</label>  
+						  <div class="col-md-4">
+						  <input id="zip code" name="zip code" type="text" placeholder="Zip Code" class="form-control input-md" required="">
 							
 						  </div>
 						</div>
 						
 						<!-- Select Basic -->
 						<div class="form-group">
-						  <label class="col-md-4 control-label" for="availability">Availability:</label>
+						  <label class="col-md-4 control-label" for="meals">Number of meals:</label>
 						  <div class="col-md-4">
-							<select id="availability" name="availability" class="form-control">
+							<select id="meals" name="meals" class="form-control">
+							  <option value="1">1</option>
+							  <option value="2">2</option>
+							  <option value="3">3</option>
+							  <option value="4">4</option>
+							  <option value="5">5</option>
+							  <option value="6">6</option>
+							</select>
+						  </div>
+						</div>
+						
+						<!-- Select Basic -->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="meals2">Meal type:</label>
+						  <div class="col-md-4">
+							<select id="meals2" name="meals2" class="form-control">
 							  <option value="1">Breakfast</option>
 							  <option value="2">Lunch</option>
 							  <option value="3">Dinner</option>
 							</select>
 						  </div>
 						</div>
-				
+						
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="allergies">Food allergies:</label>  
+						  <div class="col-md-4">
+						  <input id="allergies" name="allergies" type="text" placeholder="Food allergies" class="form-control input-md" required="">
+							
+						  </div>
+						</div>
+
 						<div class="bootstrap-iso">
 								<div class="container-fluid">
 								 <div class="row">
-									<div class="col-md-6 col-sm-6 col-xs-12">
-									 <form action="https://formden.com/post/MlKtmY4x/" class="form-horizontal" method="post">
-										<div class="form-group ">
-										 <label class="control-label col-sm-2 requiredField" id="date-pick" for="date">
-											Date:
-										 </label>
-										 <div class="col-sm-10">
-											<div class="input-group">
-											 <div class="input-group-addon">
-												<!-- <i class="fa fa-calendar">
-												</i> -->
-											 </div>
-											 <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
-											</div>
-										 </div>
-										</div>
-										<div class="form-group">
-										 <div class="col-sm-10 col-sm-offset-2">
-											<input name="_honey" style="display:none" type="text"/>
-										 </div>
-										</div>
-									 </form>
+								  <div class="col-md-6 col-sm-6 col-xs-12">
+								   <form action="https://formden.com/post/MlKtmY4x/" class="form-horizontal" method="post">
+									<div class="form-group ">
+									 <label class="control-label col-sm-2 requiredField" for="date">
+									  Date:
+									 </label>
+									 <div class="col-sm-10">
+									  <div class="input-group">
+									   <div class="input-group-addon">
+										<!-- <i class="fa fa-calendar">
+										</i> -->
+									   </div>
+									   <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+									  </div>
+									 </div>
 									</div>
+									<div class="form-group">
+									 <div class="col-sm-10 col-sm-offset-2">
+									  <input name="_honey" style="display:none" type="text"/>
+									 </div>
+									</div>
+								   </form>
+								  </div>
 								 </div>
 								</div>
-							 </div>
-						
-							 
-							 
-							 <!-- Extra JavaScript/CSS added manually in "Settings" tab -->
-							 <!-- Include jQuery -->
-							 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-							 
-							 <!-- Include Date Range Picker -->
-							 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-							 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-							 
-							 <script>
-								 $(document).ready(function(){
-									 var date_input=$('input[name="date"]'); //our date input has the name "date"
-									 var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-									 date_input.datepicker({
-										 format: 'mm/dd/yyyy',
-										 container: container,
-										 todayHighlight: true,
-										 autoclose: true,
-									 })
-								 })
-							 </script>
-							 
-
-
-						<!-- Multiple Checkboxes (inline) -->
-						<div class="form-group">
-								<label class="col-md-4 control-label" for="background check">Will you outsource produce from local markets?</label>
-								<div class="col-md-4">
-								<label class="checkbox-inline" for="background check-0">
-									<input type="checkbox" name="background check" id="background check-0" value="1">
-									Yes
-								</label>
-								<label class="checkbox-inline" for="background check-1">
-									<input type="checkbox" name="background check" id="background check-1" value="2">
-									No
-								</label>
-								</div>
-							</div>
-							
-
-						<div class="form-group">
-						  <label class="col-md-4 control-label" for="background check">Do you agree to a background check?</label>
-						  <div class="col-md-4">
-							<label class="checkbox-inline" for="background check-0">
-							  <input type="checkbox" name="background check" id="background check-0" value="1">
-							  Yes
-							</label>
-							<label class="checkbox-inline" for="background check-1">
-							  <input type="checkbox" name="background check" id="background check-1" value="2">
-							  No
-							</label>
-						  </div>
-						</div>
+							   </div>
+							   
+							   
+							   <!-- Extra JavaScript/CSS added manually in "Settings" tab -->
+							   <!-- Include jQuery -->
+							   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+							   
+							   <!-- Include Date Range Picker -->
+							   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+							   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+							   
+							   <script>
+								   $(document).ready(function(){
+									   var date_input=$('input[name="date"]'); //our date input has the name "date"
+									   var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+									   date_input.datepicker({
+										   format: 'mm/dd/yyyy',
+										   container: container,
+										   todayHighlight: true,
+										   autoclose: true,
+									   })
+								   })
+							   </script>
+							   
 						
 						<!-- Button -->
 						<div class="form-group">
 						  <div class="col-md-4">
-							<button id="submit button" name="submit button" class="btn btn-primary">Submit</button>
+							<button id="submit" name="submit" class="btn btn-primary">Submit</button>
 						  </div>
 						</div>
 						
 						</fieldset>
 						</form>
+						
 		</div>
 
 		<!-- <div class="bottom_block">
 			<div class="container_12">
-				<div class="grid_4">
+				<div class="grid_4 ">
+					<h3>Stay Informed</h3>
+					<div class="text1">Subscribe to Our Newsletter</div>
+					<form id="newsletter">
+						<div class="rel">
+							<div class="success">Your subscribe request has been sent!</div>
+							<label class="email">
+								<input type="email" value="Enter your Email">
+								<span class="error">*This is not a valid email address.</span>
+							</label>
+						</div>
+						<a href="#" class="btn" data-type="submit">Submit</a>
+					</form>
 				</div>
 				<div class="grid_5 prefix_3">
 					<h3>Stay Connected</h3>
 					<div class="text1">Follow Us on Social Media Accounts </div>
-				
+					Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin
+					pharetra
 					<div class="socials">
 						<a href="#">
 							<div class="fa fa-twitter"></div>
@@ -277,7 +302,6 @@
 						<a href="#">
 							<div class="fa fa-instagram"></div>
 						</a>
-						
 					</div>
 				</div>
 			</div>
@@ -293,54 +317,6 @@
 				</div>
 			</div> -->
 		</footer>
-		<script src="js/jquery.hoverdir.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('.iosSlider').iosSlider({
-				desktopClickDrag: true,
-				snapToChildren: true,
-				navSlideSelector: '.sliderContainer .slideSelectors .item',
-				onSlideComplete: slideComplete,
-				onSliderLoaded: sliderLoaded,
-				onSlideChange: slideChange,
-				scrollbar: false,
-				autoSlide: true,
-				autoSlideTimer: 3300,
-				infiniteSlider: true
-			});
-		});
-		function slideChange(args) {
-			$('.sliderContainer .slideSelectors .item').removeClass('selected');
-			$('.sliderContainer .slideSelectors .item:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
-		}
-		function slideComplete(args) {
-			if (!args.slideChanged) return false;
-			$(args.sliderObject).find('.text1, .text2').attr('style', '');
-			$(args.currentSlideObject).find('.text1').animate({
-				right: '100px',
-				opacity: '0.72'
-			}, 400, 'easeOutQuint');
-			$(args.currentSlideObject).find('.text2').delay(200).animate({
-				right: '70px',
-				opacity: '0.72'
-			}, 400, 'easeOutQuint');
-		}
-		function sliderLoaded(args) {
-			$(args.sliderObject).find('.text1, .text2').attr('style', '');
-			$(args.currentSlideObject).find('.text1').animate({
-				right: '100px',
-				opacity: '0.72'
-			}, 400, 'easeOutQuint');
-			$(args.currentSlideObject).find('.text2').delay(200).animate({
-				right: '70px',
-				opacity: '0.72'
-			}, 400, 'easeOutQuint');
-			slideChange(args);
-		}
-		$(function () {
-			$(' #da-thumbs > li ').each(function () { $(this).hoverdir(); });
-		});
-	</script>
 </body>
 
 </html>
