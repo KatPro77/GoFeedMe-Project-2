@@ -717,3 +717,14 @@ footer {
     background-position: right 0;
 }
 
+/**Modal**/
+
+.form-group {
+    margin: 15px;
+}
+
+.btn-primary {
+margin: 15px;
+}
+
+
