@@ -30,6 +30,16 @@ body {
     background-color: #e9b953;
 }
 
+#image {
+    padding: 10px;
+    margin:-10px;
+}
+
+#image-logo {
+    padding: 10px;
+    margin:-20px;
+}
+
 .content {
     background-color: #e9b953;
 }
