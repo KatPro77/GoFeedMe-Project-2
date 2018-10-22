@@ -2,13 +2,8 @@ var path = require("path");
 
 module.exports = function (app) {
   // Load index page
-  app.get("/", function (req, res) {
+  app.get("/login", function (req, res) {
     res.sendFile(path.join(__dirname, "../views/login.html"));
-  });
-
-  // Load contact page
-  app.get("/contact", function (req, res) {
-    res.sendFile(path.join(__dirname, "../views/contact.html"));
   });
 
   // Load volunteer page 
@@ -17,7 +12,7 @@ module.exports = function (app) {
   });
 
   // Load login page
-  app.get("/home", function (req, res) {
+  app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "../views/index.html"));
   });
 

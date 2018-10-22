@@ -152,10 +152,10 @@ nav{ position:relative;padding: 0px 0 0 0;}
 	background-color: #3d454b;
 }
 
-.sf-menu li ul ul li a:hover
+ .sf-menu li ul ul li a:hover
 {
 	color: #3498db;
-}
+} 
 
 
 /*==================================RESPONSIVE LAYOUTS===============================================*/
@@ -212,6 +212,6 @@ nav{ position:relative;padding: 0px 0 0 0;}
     outline: none;
 		border:2px solid #fff;
 	}
-	
+	 
 
-}
+} 
