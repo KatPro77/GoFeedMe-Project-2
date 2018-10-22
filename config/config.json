@@ -5,7 +5,7 @@
     "database": "volunteer_db",
     "host": "localhost",
     "dialect": "mysql",
-    "port": 8889
+    "port": 9498
   },
   "test": {
     "username": "root",
