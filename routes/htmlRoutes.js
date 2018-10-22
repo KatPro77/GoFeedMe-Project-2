@@ -6,11 +6,6 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../views/login.html"));
   });
 
-  // Load contact page
-  app.get("/contact", function (req, res) {
-    res.sendFile(path.join(__dirname, "../views/contact.html"));
-  });
-
   // Load volunteer page 
   app.get("/volunteer", function (req, res) {
     res.sendFile(path.join(__dirname, "../views/volunteer.html"));
