@@ -4,9 +4,7 @@ var inquirer = require("inquirer");
 var connection = mysql.createConnection({
     host: "localhost",
     port: 9498,
-
     user: "root",
-
     password: "root",
     database: "volunteer_db"
 });
@@ -63,8 +61,9 @@ function nameSearch() {
             message: "What is the name of the farmers market you searching for?"
         })
         .then(function(answer) {
-            var query = "SELECT name, FROM name WHERE ?";
-            connection.query(query, {name: answer.name }, function(err, res) {
+            var query = "SELECT * FROM volunteer_db WHERE name = ?";
+            console.log(answer.market);
+            connection.query(query, answer.market, function(err, res) {
                 for (var i = 0; i<length; i++) {
                     console.log("Position" + res[i].position + " || Name: " + res[i].name);
                 }
