@@ -192,9 +192,11 @@
         if (firebaseUser) {
             console.log(firebaseUser);
             btnLogout.removeAttribute("style");
+            window.location = "/home"
         } else {
             console.log("Not logged in");
             btnLogout.setAttribute("style", "display: none;");
+            // window.location = "/"
         }
     });
 

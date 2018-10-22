@@ -150,10 +150,13 @@
 }
 
 
+<<<<<<< HEAD
+=======
 
 
 
 
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
 .phone {
 	position: relative;
 }
@@ -195,7 +198,11 @@
 }
 
 
+<<<<<<< HEAD
+/* 
+=======
 
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
 #newsletter {
     padding: 3px 0px 0px;
 }
@@ -214,10 +221,17 @@
     width: 100%;
     display: block;
     float: left;
+<<<<<<< HEAD
+} */
+
+
+/* #newsletter input {
+=======
 }
 
 
 #newsletter input {
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
    	border: none;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -241,11 +255,19 @@
  transition: 0.5s ease;
     -o-transition: 0.5s ease;
     -webkit-transition: 0.5s ease;
+<<<<<<< HEAD
+} */
+
+
+
+/* #newsletter a {
+=======
 }
 
 
 
 #newsletter a {
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
     margin-top: 0;
     padding-left: 20px;
     padding-right: 20px;
@@ -257,10 +279,17 @@
 
 #newsletter a:hover {
     background-position: 0 bottom;
+<<<<<<< HEAD
+} */
+
+
+/* #newsletter .error, #form1 .empty {     
+=======
 }
 
 
 #newsletter .error, #form1 .empty {     
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
     height:0px;
     top: 2px;
     right: 1px;
@@ -281,6 +310,17 @@
     -webkit-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
+<<<<<<< HEAD
+    } */
+
+/* #newsletter label.invalid .error {
+    /*display: block;*/
+    /* height:32px;
+
+} */
+
+/* #newsletter .success {
+=======
     }
 
 #newsletter label.invalid .error {
@@ -290,6 +330,7 @@
 }
 
 #newsletter .success {
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
     width: 100%;
     top: 0px;
     z-index: 999;
@@ -310,7 +351,11 @@
     -o-transition: all 0.3s ease-out; 
     transition: all 0.3s ease-out; 
     position: absolute;
+<<<<<<< HEAD
+} */ 
+=======
 }
+>>>>>>> 535e3099ad8eafb3c6c3fc6c6680280701e61d7e
 
 
 

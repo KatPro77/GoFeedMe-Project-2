@@ -1,7 +1,8 @@
 DROP DATABASE IF EXISTS volunteer_db;
 CREATE DATABASE volunteer_db;
-USE volunteer_db;
+USE volunteer_db;   
 
+<<<<<<< HEAD
 CREATE TABLE volunteers (
     id INT NOT NULL AUTO_INCREMENT,
     FMID INTEGER(1100000) NOT NULL,
@@ -14,3 +15,5 @@ CREATE TABLE volunteers (
     Zip Code VARCHAR(50) NOT NULL,
     PRIMARY KEY(id)
 );
+=======
+>>>>>>> 422ee294edb6a3f33a2271281444ee642909be16

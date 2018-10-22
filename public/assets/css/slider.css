@@ -11,6 +11,7 @@
 	height: 100%;
 	max-height: 354px;
 	padding: 0 0;
+	background-color: #e9b953;
 }
 
 .iosSlider {
@@ -65,11 +66,11 @@
 	color: #fff; 
 }
 
-.iosSlider .slider .item1 .inner { background-image: url('../images/slide.jpg'); }
+.iosSlider .slider .item1 .inner { background-image: url('../images/gfm1.jpg'); }
 
-.iosSlider .slider .item2 .inner { background-image: url('../images/slide1.jpg'); }
+.iosSlider .slider .item2 .inner { background-image: url('../images/gfm2.jpg'); }
 
-.iosSlider .slider .item3 .inner { background-image: url('../images/slide2.jpg'); }
+.iosSlider .slider .item3 .inner { background-image: url('../images/gfm3.png'); }
 
 .sliderContainer .slideSelectors {
 	position: absolute;
