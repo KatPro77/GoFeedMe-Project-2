@@ -743,3 +743,13 @@ footer {
     font-weight: bold;
 }
 
+/**Modal**/
+
+.form-group {
+    margin: 15px;
+}
+
+.btn-primary {
+margin: 15px;
+}
+
