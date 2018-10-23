@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "rrrr4444RRRR$$$$",
+    "password": "",
     "database": "volunteer_db",
     "host": "localhost",
     "dialect": "mysql",
