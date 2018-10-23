@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="assets/css/thumbs.css">
 	<link rel="stylesheet" href="assets/css/slider.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery-migrate-1.2.1.js"></script>
 	<script src="js/script.js"></script>
@@ -20,6 +22,12 @@
 	<script src="js/jquery.equalheights.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/jquery.iosslider.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
 	<script>
 		$(document).ready(function () {
 			$().UItoTop({ easingType: 'easeOutQuart' });
@@ -40,7 +48,7 @@
 					</a>
 				</h1>
 				<div class="menu_block ">
-					<a href="#" class="donate">Login</a>
+					<a href="#" class="bb-trigger donate" data-toggle="modal" data-target="#myModal">LOGIN</a>
 					<div class="clear"></div>
 					<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 						<ul class="sf-menu">
@@ -78,107 +86,107 @@
 					<div class="item item3">
 						<div class="inner">
 
-					</div>
-				</div>
-			</div>
-			<div class="slideSelectors">
-				<div class="item selected"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-			</div>
-		</div>
-	</div>
-	<!--==============================Content=================================-->
-	<br>
-	<div class="fluidHeight2 container_12">
-		<div class="jumbotron jumbotron-fluid">
-			<div class="container">
-				<h1 class="display-4" id="about">
-					<strong>About Us</strong>
-				</h1>
-				<br>
-				<p class="lead">Our mission is to bring healthy and nutritious meals to not only elderly residents, but also to low-income households
-					with young children. GoFeedMe program brings home-cooked meals provided by our volunteer chefs. Anyone in need can sign-up,
-					our volunteers are carefully screened with background checks, insured and we are greatful for the time they donate.
-					Our organization also requires that the chefs utilize local farmers markets for local and organic produce in order to
-					support our local communities. As a part of the sign-up program we do match our volunteers with local markets in their
-					area. </p>
-				<p> People who sign-up for our meals delivery are guaranteed healthy meals - breakfast, lunch and/or dinner along with our
-					ability to accommodate special dietary requirements and allergies.
-				</p>
-				<p>16% of Mecklenburg County's population is currently food insecure. That translates to over 162,000 people in our area.
-					Overall 14.5% of this country's population is not receiving the proper nutritious meals. LET'S GET RID OF HUNGER - ONE
-					MEAL AT THE TIME!
-				</p>
-			</div>
-		</div>
-	</div>
-	<hr>
-
-	<div class="content">
-
-		<div class="container_12">
-			<div class="grid_6">
-				<h2>Cook a Meal</h2>
-				<img src="assets/images/volunteer small.jpg" alt="" class="img_inner fleft">
-				<div class="extra_wrapper">
-					<p class="col2">Join us and help feed people in need </p>
-					<a href="/volunteer" class="btn">Volunteer</a>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="grid_5 prefix_1">
-				<h2>Request a Meal</h2>
-				<img src="assets/images/meal.jpg" alt="" class="img_inner fleft">
-				<div class="rel1">
-					<p>Register here for meal delivery</p>
-				</div>
-				<a href="/meals" class="btn">Request a Meal</a>
-			</div>
-		</div>
-		<div class="hor"></div>
-		<div class="container_12">
-			<div class="grid_3">
-
-			</div>
-			<div class="grid_9">
-				<h2>
-					<strong>Leave Us a Message</strong>
-				</h2>
-
-				<form id="form">
-					<div class="success_wrapper">
-						<div class="success-message">
-							<strong>Leave Us a Message</strong>
 						</div>
 					</div>
-					<label class="name">
-						<input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
-						<span class="empty-message">*This field is required.</span>
-						<span class="error-message">*This is not a valid name.</span>
-					</label>
-					<label class="email">
-						<input type="text" placeholder="Email:" data-constraints="@Required @Email" />
-						<span class="empty-message">*This field is required.</span>
-						<span class="error-message">*This is not a valid email.</span>
-					</label>
-
-					<label class="message">
-						<textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-						<span class="empty-message">*This field is required.</span>
-						<span class="error-message">*The message is too short.</span>
-					</label>
-					<div>
-						<div class="clear"></div>
-						<div class="btns">
-							<a href="#" data-type="reset" class="btn">Clear</a>
-							<a href="#" data-type="submit" class="btn">Send</a>
-						</div>
-					</div>
-				</form>
+				</div>
+				<div class="slideSelectors">
+					<div class="item selected"></div>
+					<div class="item"></div>
+					<div class="item"></div>
+				</div>
 			</div>
 		</div>
-	</div>
+		<!--==============================Content=================================-->
+		<br>
+		<div class="fluidHeight2 container_12">
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-4" id="about">
+						<strong>About Us</strong>
+					</h1>
+					<br>
+					<p class="lead">Our mission is to bring healthy and nutritious meals to not only elderly residents, but also to low-income households
+						with young children. GoFeedMe program brings home-cooked meals provided by our volunteer chefs. Anyone in need can
+						sign-up, our volunteers are carefully screened with background checks, insured and we are greatful for the time they
+						donate. Our organization also requires that the chefs utilize local farmers markets for local and organic produce in
+						order to support our local communities. As a part of the sign-up program we do match our volunteers with local markets
+						in their area. </p>
+					<p> People who sign-up for our meals delivery are guaranteed healthy meals - breakfast, lunch and/or dinner along with our
+						ability to accommodate special dietary requirements and allergies.
+					</p>
+					<p>16% of Mecklenburg County's population is currently food insecure. That translates to over 162,000 people in our area.
+						Overall 14.5% of this country's population is not receiving the proper nutritious meals. LET'S GET RID OF HUNGER -
+						ONE MEAL AT THE TIME!
+					</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<div class="content">
+
+			<div class="container_12">
+				<div class="grid_6">
+					<h2>Cook a Meal</h2>
+					<img src="assets/images/volunteer small.jpg" alt="" class="img_inner fleft">
+					<div class="extra_wrapper">
+						<p class="col2">Join us and help feed people in need </p>
+						<a href="/volunteer" class="btn">Volunteer</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="grid_5 prefix_1">
+					<h2>Request a Meal</h2>
+					<img src="assets/images/meal.jpg" alt="" class="img_inner fleft">
+					<div class="rel1">
+						<p>Register here for meal delivery</p>
+					</div>
+					<a href="/meals" class="btn">Request a Meal</a>
+				</div>
+			</div>
+			<div class="hor"></div>
+			<div class="container_12">
+				<div class="grid_3">
+
+				</div>
+				<div class="grid_9">
+					<h2>
+						<strong>Leave Us a Message</strong>
+					</h2>
+
+					<form id="form">
+						<div class="success_wrapper">
+							<div class="success-message">
+								<strong>Leave Us a Message</strong>
+							</div>
+						</div>
+						<label class="name">
+							<input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
+							<span class="empty-message">*This field is required.</span>
+							<span class="error-message">*This is not a valid name.</span>
+						</label>
+						<label class="email">
+							<input type="text" placeholder="Email:" data-constraints="@Required @Email" />
+							<span class="empty-message">*This field is required.</span>
+							<span class="error-message">*This is not a valid email.</span>
+						</label>
+
+						<label class="message">
+							<textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+							<span class="empty-message">*This field is required.</span>
+							<span class="error-message">*The message is too short.</span>
+						</label>
+						<div>
+							<div class="clear"></div>
+							<div class="btns">
+								<a href="#" data-type="reset" class="btn">Clear</a>
+								<a href="#" data-type="submit" class="btn">Send</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- <div class="bottom_block">
@@ -214,6 +222,31 @@
 	<footer>
 
 	</footer>
+
+	<!--==============================modal=================================-->
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<form action="/action_page.php">
+					<div class="form-group">
+						<label for="email">Email address:</label>
+						<input type="email" class="form-control" id="email">
+					</div>
+					<div class="form-group">
+						<label for="pwd">Password:</label>
+						<input type="password" class="form-control" id="pwd">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+
 	<script src="js/jquery.hoverdir.js"></script>
 	<script>
 		$(document).ready(function () {
@@ -263,4 +296,5 @@
 		});
 	</script>
 </body>
+
 </html>
