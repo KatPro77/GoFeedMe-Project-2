@@ -2,14 +2,14 @@ module.exports = function(sequelize, DataTypes) {
   var Volunteer = sequelize.define("Volunteer", {
     name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       validate: {
         len: [1, 25]
       }
     },
     email: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       validate: {
         len: [1, 25]
       }
