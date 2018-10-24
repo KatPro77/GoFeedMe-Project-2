@@ -19,14 +19,17 @@ module.exports = function(app) {
       res.json(dbVolunteer);
     });
   });
-};
 
-// // Delete a volunteer by id
-//   app.delete("/api/volunteer/:id", function(req, res) {
-//     db.Volunteer.destroy({
-//       where: {
-//         id: req.params.id
-//       }
-//     }).then(function(dbVolunteer) {
-//       res.json(dbVolunteer);
-//     });
+  //create new request for food.
+  app.post("/api/requests", function(req, res) {
+    console.log(req.body);
+    db.requests.create({
+        name: req.body.name,
+        email: req.body.email,
+        phone: req.body.phone
+      })
+      .then(function(dbrequests) {
+        res.json(dbrequests);
+      });
+  });
+};
