@@ -61,14 +61,22 @@ function nameSearch() {
             message: "What is the name of the farmers market you searching for?"
         })
         .then(function(answer) {
-            var query = "SELECT * FROM volunteer_db WHERE name = ?";
-            console.log(answer.market);
-            connection.query(query, answer.market, function(err, res) {
+            var query = "SELECT name FROM volunteer_db WHERE ?";
+            connection.query(query, { name: answer.market}, function(err, res) {
                 for (var i = 0; i < res.length; i++) {
-                    console.log("FMID" + res[i].fmid + " || Name: " + res[i].name);
+                    name = (res[i].name);
+                    console.log(res[i]);
                 }
                 runSearch();
             });
+            // var query = "SELECT * FROM volunteer_db WHERE name = ?";
+            // console.log(answer.market);
+            // connection.query(query, answer.market, function(err, res) {
+            //     for (var i = 0; i < length; i++) {
+            //         console.log("Name: " + res[i].name);
+            //     }
+            //     runSearch();
+            // });
         });
 }
 
