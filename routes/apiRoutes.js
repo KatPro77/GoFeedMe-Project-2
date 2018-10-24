@@ -20,7 +20,7 @@ module.exports = function(app) {
     });
   });
 };
-  
+
 // // Delete a volunteer by id
 //   app.delete("/api/volunteer/:id", function(req, res) {
 //     db.Volunteer.destroy({
@@ -30,4 +30,3 @@ module.exports = function(app) {
 //     }).then(function(dbVolunteer) {
 //       res.json(dbVolunteer);
 //     });
-  
