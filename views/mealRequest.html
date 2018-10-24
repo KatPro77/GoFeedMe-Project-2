@@ -97,12 +97,12 @@
 				<!-- <div class="ic">More Website Templates @ TemplateMonster.com - March 24, 2014!</div> -->
 
 				<div class="container_12">
-					<form class="form-horizontal">
+					<form class="form-horizontal"action="/api/requests" method="post" >
 						<fieldset>
-
+							<form class="form-horizontal">
 							<!-- Form Name -->
 							<legend id="mealReq">Meal Request Form</legend>
-
+							
 							<!-- Select Basic -->
 							<div class="form-group">
 								<label class="col-md-4 control-label" for="organization">Organization:</label>
@@ -154,21 +154,7 @@
 
 							<!-- Select Basic -->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="meals">Number of meals:</label>
-								<div class="col-md-4">
-									<select id="meals" name="meals" class="form-control">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-									</select>
-								</div>
-							</div>
-							<!-- Select Basic -->
-							<div class="form-group">
-								<label class="col-md-4 control-label" for="meals">Please specify if ordering more than 6 Meals:</label>
+								<label class="col-md-4 control-label" for="meals">Please specify if number of Meals:</label>
 								<div class="col-md-4"></div>
 								<input id="mealsover" name="mealsover" type="text" placeholder="Number of Meals" class="form-control input-md" required="">
 							</div>
@@ -224,14 +210,13 @@
 						</div>
 					</div>
 				</div>
-
-
+			
 				<!-- Extra JavaScript/CSS added manually in "Settings" tab -->
 				<!-- Include jQuery -->
 				<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 				<!-- Include Date Range Picker -->
-				<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+				<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
 				/>
 
@@ -246,7 +231,7 @@
 							autoclose: true,
 						})
 					})
-				</script>
+				</script> -->
 
 
 				<!-- Button -->
