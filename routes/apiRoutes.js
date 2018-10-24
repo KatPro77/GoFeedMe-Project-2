@@ -33,3 +33,14 @@ module.exports = function(app) {
       });
   });
 };
+
+// // Delete a volunteer by id
+//   app.delete("/api/volunteer/:id", function(req, res) {
+//     db.Volunteer.destroy({
+//       where: {
+//         id: req.params.id
+//       }
+//     }).then(function(dbVolunteer) {
+//       res.json(dbVolunteer);
+//     });
+
