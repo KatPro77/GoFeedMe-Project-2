@@ -161,18 +161,18 @@
 							</div>
 						</div>
 						<label class="name">
-							<input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
+							<input id="commentName" type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
 							<span class="empty-message">*This field is required.</span>
 							<span class="error-message">*This is not a valid name.</span>
 						</label>
 						<label class="email">
-							<input type="text" placeholder="Email:" data-constraints="@Required @Email" />
+							<input id="commentEmail" type="text" placeholder="Email:" data-constraints="@Required @Email" />
 							<span class="empty-message">*This field is required.</span>
 							<span class="error-message">*This is not a valid email.</span>
 						</label>
 
 						<label class="message">
-							<textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+							<textarea id="comment" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
 							<span class="empty-message">*This field is required.</span>
 							<span class="error-message">*The message is too short.</span>
 						</label>
@@ -189,40 +189,6 @@
 		</div>
 	</div>
 
-	<!-- <div class="bottom_block">
-		<div class="container_12">
-			<div class="grid_4">
-			</div>
-			<div class="grid_5 prefix_3">
-				<h3>Stay Connected</h3>
-				<div class="text1">Follow Us on Social Media Accounts </div>
-
-				<div class="socials">
-					<a href="#">
-						<div class="fa fa-twitter"></div>
-					</a>
-					<a href="#">
-						<div class="fa fa-facebook"></div>
-					</a>
-					<a href="#">
-						<div class="fa fa-pinterest-square"></div>
-					</a>
-					<a href="#">
-						<div class="fa fa-google-plus"></div>
-					</a>
-					<a href="#">
-						<div class="fa fa-instagram"></div>
-					</a>
-
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<!--==============================footer=================================-->
-	<footer>
-
-	</footer>
-
 	<!--==============================modal=================================-->
 	<!-- Modal -->
 	<div id="myModal" class="modal fade" role="dialog">
@@ -232,21 +198,21 @@
 			<div class="modal-content">
 					<form id="formLogin">
 							<div class="form-group">
-								<label>&nbsp;&nbsp;E-mail </label>
+								<label>E-mail </label>
 								<input id="textEmail" class="form-control" type="email" placeholder="Your email address">
 								<label id="invalidEmail" style="color:red; font-size: 12px; display: none;">
 									<b>Please enter a valid email.</b>
 								</label>
 							</div>
 							<div class="form-group">
-								<label>&nbsp;Password</label>
+								<label>Password</label>
 								<input id="textPassword" class="form-control" type="password" placeholder="Password must be between 6 and 14 digits long and include at least one numeric digit.">
 								<div>
 									<label id="invalidPassword" style="display: none;">
 										<b>Password must be between 6 and 14 digits long and include at least one numeric digit.</b>
 									</label>
 								</div>
-			
+								<hr>
 								<button id="btnLogin" class="btn btn-light" type="button">Log in</button>
 								<button id="btnSignUp" class="btn btn-light" type="button">Sign up</button>
 								<button id="btnLogout" class="btn btn-light" type="button" style="display: none;">Logout</button>
@@ -323,7 +289,13 @@
         messagingSenderId: "771848633863"
     };
     firebase.initializeApp(config);
+	// Leave a message 
+	var db = firebase.database();
 
+	
+
+
+	//-----------------------------------------------------------------------------
     // Set firebase auth state presistance 
 
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
