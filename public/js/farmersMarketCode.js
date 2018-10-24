@@ -64,100 +64,100 @@ function nameSearch() {
             var query = "SELECT * FROM volunteer_db WHERE name = ?";
             console.log(answer.market);
             connection.query(query, answer.market, function(err, res) {
-                for (var i = 0; i<length; i++) {
-                    console.log("Position" + res[i].position + " || Name: " + res[i].name);
+                for (var i = 0; i < res.length; i++) {
+                    console.log("FMID" + res[i].fmid + " || Name: " + res[i].name);
                 }
                 runSearch();
             });
         });
 }
 
-function streetSearch() {
-    inquirer
-        .prompt({
-            name: "street",
-            type: "input",
-            message: "What is the street name of the farmers market you searching for?"
-        })
-        .then(function(answer) {
-            var query = "SELECT street, FROM street WHERE ?";
-            connection.query(query, {street: answer.street }, function(err, res) {
-                for (var i = 0; i<length; i++) {
-                    console.log("Position" + res[i].position + " || Street: " + res[i].street);
-                }
-                runSearch();
-            });
-        });
-}
+// function streetSearch() {
+//     inquirer
+//         .prompt({
+//             name: "street",
+//             type: "input",
+//             message: "What is the street name of the farmers market you searching for?"
+//         })
+//         .then(function(answer) {
+//             var query = "SELECT street, FROM street WHERE ?";
+//             connection.query(query, {street: answer.street }, function(err, res) {
+//                 for (var i = 0; i < res.length; i++) {
+//                     console.log("FMID" + res[i].fmid + " || Street: " + res[i].street);
+//                 }
+//                 runSearch();
+//             });
+//         });
+// }
 
-function citySearch() {
-    inquirer
-        .prompt({
-            name: "city",
-            type: "input",
-            message: "What is the name of thecity where your farmers market is located?"
-        })
-        .then(function(answer) {
-            var query = "SELECT city, FROM city WHERE ?";
-            connection.query(query, {city: answer.city }, function(err, res) {
-                for (var i = 0; i<length; i++) {
-                    console.log("Position" + res[i].position + " || City: " + res[i].city);
-                }
-                runSearch();
-            });
-        });
-}
+// function citySearch() {
+//     inquirer
+//         .prompt({
+//             name: "city",
+//             type: "input",
+//             message: "What is the name of thecity where your farmers market is located?"
+//         })
+//         .then(function(answer) {
+//             var query = "SELECT city, FROM city WHERE ?";
+//             connection.query(query, {city: answer.city }, function(err, res) {
+//                 for (var i = 0; i<length; i++) {
+//                     console.log("Position" + res[i].position + " || City: " + res[i].city);
+//                 }
+//                 runSearch();
+//             });
+//         });
+// }
 
-function countySearch() {
-    inquirer
-        .prompt({
-            name: "county",
-            type: "input",
-            message: "What is the name of the county where your farmers market is located?"
-        })
-        .then(function(answer) {
-            var query = "SELECT county, FROM county WHERE ?";
-            connection.query(query, {county: answer.county }, function(err, res) {
-                for (var i = 0; i<length; i++) {
-                    console.log("Position" + res[i].position + " || County: " + res[i].county);
-                }
-                runSearch();
-            });
-        });
-}
+// function countySearch() {
+//     inquirer
+//         .prompt({
+//             name: "county",
+//             type: "input",
+//             message: "What is the name of the county where your farmers market is located?"
+//         })
+//         .then(function(answer) {
+//             var query = "SELECT county, FROM county WHERE ?";
+//             connection.query(query, {county: answer.county }, function(err, res) {
+//                 for (var i = 0; i<length; i++) {
+//                     console.log("Position" + res[i].position + " || County: " + res[i].county);
+//                 }
+//                 runSearch();
+//             });
+//         });
+// }
 
-function stateSearch() {
-    inquirer
-        .prompt({
-            name: "state",
-            type: "input",
-            message: "What is the name of the state where your farmers market is located?"
-        })
-        .then(function(answer) {
-            var query = "SELECT state, FROM state WHERE ?";
-            connection.query(query, {state: answer.state }, function(err, res) {
-                for (var i = 0; i<length; i++) {
-                    console.log("Position" + res[i].position + " || State: " + res[i].state);
-                }
-                runSearch();
-            });
-        });
-}
+// function stateSearch() {
+//     inquirer
+//         .prompt({
+//             name: "state",
+//             type: "input",
+//             message: "What is the name of the state where your farmers market is located?"
+//         })
+//         .then(function(answer) {
+//             var query = "SELECT state, FROM state WHERE ?";
+//             connection.query(query, {state: answer.state }, function(err, res) {
+//                 for (var i = 0; i<length; i++) {
+//                     console.log("Position" + res[i].position + " || State: " + res[i].state);
+//                 }
+//                 runSearch();
+//             });
+//         });
+// }
 
-function zipcodeSearch() {
-    inquirer
-        .prompt({
-            name: "zipcode",
-            type: "input",
-            message: "What is the street name of the farmers market you searching for?"
-        })
-        .then(function(answer) {
-            var query = "SELECT zipcode, FROM zipcode WHERE ?";
-            connection.query(query, {zipcode: answer.zipcode }, function(err, res) {
-                for (var i = 0; i<length; i++) {
-                    console.log("Position" + res[i].position + " || Zipcode: " + res[i].zipcode);
-                }
-                runSearch();
-            });
-        });
-}
+// function zipcodeSearch() {
+//     inquirer
+//         .prompt({
+//             name: "zipcode",
+//             type: "input",
+//             message: "What is the street name of the farmers market you searching for?"
+//         })
+//         .then(function(answer) {
+//             var query = "SELECT zipcode, FROM zipcode WHERE ?";
+//             connection.query(query, {zipcode: answer.zipcode }, function(err, res) {
+//                 for (var i = 0; i<length; i++) {
+//                     console.log("Position" + res[i].position + " || Zipcode: " + res[i].zipcode);
+//                 }
+//                 runSearch();
+//             });
+//         });
+// }
