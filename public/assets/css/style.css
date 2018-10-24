@@ -24,9 +24,12 @@ a[href^="tel:"] {
 body {
 	position: relative;
 	min-width: 960px;
-    background-color: #fff;
     color: #838181;
     font: 14px/20px 'Open Sans', sans-serif;
+    background-color: #e9b953;
+}
+
+#top {
     background-color: #e9b953;
 }
 
@@ -44,10 +47,12 @@ body {
     background-color: #e9b953;
 }
 
+
+
 .ic {
 	border:0;
 	float:right;
-	background:#fff;
+	background-color: #e9b953;;
 	color:#f00;
 	width:50%;
 	line-height:10px;
@@ -386,7 +391,7 @@ a.donate:hover {
 }
 
 .bq1 {
-    background-color: #ededed;
+    background-color: #e9b953;
     margin-top: 57px;
     padding-bottom: 26px;
 }
@@ -741,5 +746,15 @@ footer {
     font-size: 24px;
     color: #626161;
     font-weight: bold;
+}
+
+/**Modal**/
+
+.form-group {
+    margin: 15px;
+}
+
+.btn-primary {
+margin: 15px;
 }
 
