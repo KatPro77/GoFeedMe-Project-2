@@ -1,12 +1,12 @@
 var db = require("../models");
 
-module.exports = function (app) {
+module.exports = function(app) {
   //Get all volunteers
-  // app.get("/api/volunteer", function (req, res) {
-  //   db.Volunteer.findAll({}).then(function (dbVolunteer) {
-  //     res.json(dbVolunteer);
-  //   });
-  // });
+  app.get("/api/volunteer", function(req, res) {
+    db.Volunteer.findAll({}).then(function(dbVolunteer) {
+      res.json(dbVolunteer);
+    });
+  });
 
   // Create a new volunteer
   app.post("/api/volunteer", function(req, res) {
@@ -19,8 +19,9 @@ module.exports = function (app) {
       res.json(dbVolunteer);
     });
   });
-
-  // // Delete a volunteer by id
+};
+  
+// // Delete a volunteer by id
 //   app.delete("/api/volunteer/:id", function(req, res) {
 //     db.Volunteer.destroy({
 //       where: {
@@ -29,5 +30,4 @@ module.exports = function (app) {
 //     }).then(function(dbVolunteer) {
 //       res.json(dbVolunteer);
 //     });
-//   });
-// };
+  
