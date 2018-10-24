@@ -14,24 +14,8 @@ module.exports = function(sequelize, DataTypes) {
         len: [1, 25]
       }
     },
-
     phone: {
-      type: DataTypes.INTEGER
-    },
-    location: {
-      type: DataTypes.INTEGER
-    },
-    availability: {
-      type: DataTypes.DATE
-    },
-    mealPreference: {
       type: DataTypes.STRING
-    },
-    mealQuantity: {
-      type: DataTypes.INTEGER
-    },
-    background: {
-      type: DataTypes.BOOLEAN
     }
   });
 

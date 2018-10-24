@@ -9,11 +9,11 @@
   },
   "test": {
     "username": "root",
-    "password": "root",
+    "password": "",
     "database": "testdb",
     "host": "localhost",
-    "dialect": "mysql",
-    "logging": false
+    "port": 3306,
+    "dialect": "mysql"
   },
   "production": {
     "use_env_variable": "JAWSDB_URL",
